@@ -1,6 +1,12 @@
+<script setup lang="ts">
+import { ref } from "vue";
+const count = ref(0);
+</script>
 <template>
-  <div>
-    <!-- Remove this component to get started! -->
-    <NuxtWelcome />
-  </div>
+	<div>
+		<h1>Counter</h1>
+		{{ count }}
+		<br />
+		<button @click="count++">increase</button>
+	</div>
 </template>
